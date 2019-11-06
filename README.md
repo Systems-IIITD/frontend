@@ -31,7 +31,7 @@ to add precedence rules to resolve the ambiguity in a way that
 "else" binds with the innermost unclosed "if". 
 
 
-After, you add the above rules "make test2" should be able to
+After you add the above rules, "make test2" should be able to
 parse the "test2" file.
 
 Submit a report that contains your changes to lexer and parser,
