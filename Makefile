@@ -4,7 +4,7 @@ parser: example_y.c example_f.c
 	gcc -o parser example_y.c example_f.c
 
 example_y.c example_y.h: example.y
-	yacc -v -d -Wconflicts-sr -o example_y.c example.y
+	yacc -Werror -Wno-yacc -v -d -Wconflicts-sr -o example_y.c example.y
 
 example_f.c: example.flex example_y.h
 	flex -o example_f.c example.flex
